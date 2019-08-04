@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zacknawrocki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="media/img/icon.png" type="image/png"></head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://avatars0.githubusercontent.com/u/40272327?v=4) center;"></div>
+        <div id="username"><span style="display:block;">Zachary Nawrocki</span><a href="https://github.com/zacknawrocki">@zacknawrocki</a></div>
+        <div id="userbio" style="display: block;">Computer Science Major at Rensselaer Polytechnic Institute</div>
+        <div id="about">
+                <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp;&nbsp; <a href="mailto:zacknawrocki@gmail.com">zacknawrocki@gmail.com</a></span>
+                <span style="display:block;"><i class="fas fa-handshake"></i> &nbsp;&nbsp; <a href="https://textuploader.com/11lmy" target="_blank">Asig Philanthropy</a></span>
+                <span style="display:block;"><i class="fab fa-youtube"></i> &nbsp;&nbsp; <a href="https://www.youtube.com/channel/UCsP-OCA2U2Vk7h63VBTDN1Q" target="_blank">Youtube</a></span>
+                <a href="https://www.linkedin.com/in/znawrocki" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/zacknawrocki" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+                <a href="media/znawrocki_resume.pdf" target="_blank" class="w3-button w3-light-grey w3-padding w3-section" style="width:65%"> Resume</a>
+    </div>
+    <div id="display">
+        <div id="proj">
+            <h1>Projects</h1>
+            <div class="projects" id="proj_section">
+                        <a href="https://zacknawrocki.github.io/openiosite/" target="_blank">
+                        <section>
+                            <div id="project_img" style="background: url(media/img/openio.png) center;"></div>
+              
+                        </section>
+                        </a>
+                        <a href="https://zacknawrocki.github.io/openiosite/" target="_blank">
+                        <section>
+                            <div id="project_img" style="background: url(media/img/openio.png) center;"></div>
+                        </section>
+                        </a>
+                        <a href="https://zacknawrocki.github.io/openiosite/" target="_blank">
+                        <section>
+                            <div id="project_img" style="background: url(media/img/openio.png) center;"></div>
+                        </section>
+                        </a>
+                        <a href="https://zacknawrocki.github.io/openiosite/" target="_blank">
+                        <section>
+                            <div id="project_img" style="background: url(media/img/openio.png) center;"></div>
+                        </section>                        
+                        </a></div>
+        </div>
+        <div id="exp">
+            <h1>Experience</h1>
+            <div class="projects" id="exp_section">
+                        <a href="https://zacknawrocki.github.io/openiosite/" target="_blank">
+                        <section>
+                            <div id="project_img" style="background: url(media/img/openio.png) center;"></div>
+                        </section>
+                        </a>
+                        <a href="https://zacknawrocki.github.io/openiosite/" target="_blank">
+                        <section>
+                            <div id="project_img" style="background: url(media/img/openio.png) center;"></div>
+                        </section>                        
+                        </a></div>
+        </div>
+        <div id="blog_section">
+            <h1>Blog</h1>
+            <div id="blogs"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("loading").classList.add("animated");
+            document.getElementById("loading").classList.add("fadeOut");
+            setTimeout(function () {
+                document.getElementById("loading").classList.remove("animated");
+                document.getElementById("loading").classList.remove("fadeOut");
+                document.getElementById("loading").style.display = "none";
+            }, 800);
+        }, 1500);
+        $.getJSON("blog.json", function (blog) {
+            blog = blog || [];
+            if (blog.length == 0) {
+                return document.getElementById("blog_section").style.display = "none";
+            }
+            for (var i = 0; i < blog.length; i++) {
+                $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+            }
+        }).fail(function () {
+            return document.getElementById("blog_section").style.display = "none";
+        });
+    </script>
+
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js');
+            });
+        }
+    </script>
+
+
+</body></html>
