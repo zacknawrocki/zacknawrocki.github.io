@@ -216,7 +216,7 @@ body{
 }
 
 #project_img {
-    width:389px;
+    width:auto;
     height:90px;
     border-radius:5px;
     background-size:cover !important;
