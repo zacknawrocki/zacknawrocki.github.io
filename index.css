@@ -70,8 +70,8 @@ body{
 #display h1 {
     font-size:50px;
     color:var(--text-color);
-    font-weight:bold;
-    font-family: 'Questrial', sans-serif;
+    font-weight:normal;
+    font-family: Verdana, sans-serif;
 }
 
 .emoji {
@@ -171,7 +171,7 @@ body{
 #header {
     width:63vw;
     text-align:right;
-    padding:3vh 0px;
+    padding:20vh 0px;
     position:absolute;
 }
 
@@ -283,14 +283,14 @@ body{
 
 .projects section {
     width:85%;
-    padding:2.5vh 5%;
+    padding:2vh 4%;
     display:inline-block;
     border-radius:5px;
     color:var(--text-color);
     border:1px solid rgb(0, 0, 0, 0.08);
     box-shadow:0px 0px 0px rgb(0, 0, 0, 0);
     transition:0.4s ease-in-out;
-    margin:0vh 0px;
+    margin:0.5vh 0px;
     transform:scale(1);
 }
 
