@@ -135,8 +135,8 @@ body{
 #blog-display h1 {
     font-size:50px;
     color:var(--text-color);
-    font-weight:bold;
-    font-family: 'Questrial', sans-serif;
+    font-weight:normal;
+    font-family: Verdana, sans-serif;
 }
 
 #blog-display h2 {
