@@ -32,7 +32,7 @@ Select **New Blog** and fill out blog content. Gitfolio requires you to put in a
 
 Within the resulting HTML blog file, you may want to make some custom tweaks. For example,
 
-##### Use the Default Background Image on Your Blog Page
+#### Use the Default Background Image on Your Blog Page
 
 Remove
 
@@ -47,7 +47,7 @@ and replace with
 <div id="background"></div>
 ```
 
-##### Remove Gitfolio Footer
+#### Remove Gitfolio Footer
 
 Remove
 
@@ -57,7 +57,7 @@ Remove
 </div>
 ```
 
-##### Use a Favicon Different From Your GitHub Profile Picture
+#### Use a Favicon Different From Your GitHub Profile Picture
 
 Remove
 
