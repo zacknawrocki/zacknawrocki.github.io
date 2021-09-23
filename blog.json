@@ -1,9 +1,8 @@
 [
-{
- "url_title": "BlogIntro",
- "title": "BlogIntro",
- "sub_title": "check1",
- "top_image": "https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1450",
- "visible": true
+ {
+  "url_title": "Contact",
+  "title": "Contact",
+  "sub_title": "Contact Me Here",
+  "visible": true
  }
 ]
