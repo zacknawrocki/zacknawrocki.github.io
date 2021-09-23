@@ -26,7 +26,7 @@ Visit gitfolio server, assign configurations, and build.
 http://localhost:3000
 ```
 
-Select New Blog and fill out blog content. Gitfolio requires you to put in a background image. If you want the default background instead, put in a [random image](https://images.unsplash.com/photo-1547138666-12a241be3c2d?w) for now and proceed to the **Manual Tweaks, if Applicable** section, to remove the background image.
+Select **New Blog** and fill out blog content. Gitfolio requires you to put in a background image. If you want the default background instead, put in a [random image](https://images.unsplash.com/photo-1547138666-12a241be3c2d?w) for now and proceed to the **Manual Tweaks, if Applicable** section, to remove the background image.
 
 ### Manual Tweaks, if Applicable
 
