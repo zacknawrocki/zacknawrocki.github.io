@@ -1,5 +1,5 @@
 # zacknawrocki.github.io
-Personal website and virtual business card
+Personal website and virtual business card <br><br>
 
 
 To create blogs or webpages, this website uses Gitfolio. Gitfolio can also tweak general settings.
